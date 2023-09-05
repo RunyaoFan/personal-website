@@ -19,7 +19,11 @@ const AboutPage: React.FC = () => {
             engineer opportunities. I am also an amateur photographer and you
             can find some of my works here. For more details of my background,
             check out my{" "}
-            <a href="/resume" target="_blank">
+            <a
+              href={`${process.env.PUBLIC_URL}/RunyaoFan_Resume.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               resume
             </a>
             .

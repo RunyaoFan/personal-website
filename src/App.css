@@ -1,122 +1,113 @@
 .container {
-    width: 65%;
-    margin: 3rem auto 3rem;
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-    min-height: 100vh; 
-  }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      width: 80%;
-    }
-  }
+  width: 65%;
+  margin: 3rem auto 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
 
-  :root {
-    --responsive-space: 3vh;  /* Default responsive spacing */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
   }
-  
-  /* .header {
-    margin-bottom: var(--responsive-space);
-  } */
-  
-  .content {
-    margin-top: var(--responsive-space);
-    margin-bottom: var(--responsive-space);
-  }
+}
 
-  .header {
+:root {
+  --responsive-space: 3vh; /* Default responsive spacing */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--responsive-space);
+}
+
+.page-logo {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  line-height: 0.9;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .page-logo {
+    font-size: 1.8rem;
+  }
+}
+
+.link {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header .page-logo,
+.header .link-container {
+  flex: 1 0 50%; /* Flex-grow, flex-shrink, flex-basis */
+}
+
+.links,
+.dropdown {
+  display: none;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  .links {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--responsive-space);
+  }
 }
 
-.header .name, .header .link-container {
-    flex: 1 0 50%; /* Flex-grow, flex-shrink, flex-basis */
-}
-  
-  .links, .dropdown {
-    display: none;
-    white-space: nowrap;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .dropdown {
-      display: flex;
-      justify-content: right;
-      align-items: center;
-    }
-  }
-
-  .dropdown-header {
-    text-align: center;
-    cursor: pointer;
-}
-
-
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown-link {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .name {
-    font-family: 'Inter', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #000000;
+@media screen and (max-width: 768px) {
+  .dropdown {
     display: flex;
-    flex-direction: column;
-    align-self: center;
-    line-height: 0.9;
+    justify-content: right;
+    align-items: center;
   }
-/* 
-  .name span {
-    margin: -20;
-  } */
-  
-  .link {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
-    text-decoration: none;
-    /* margin-right: 40%; */
-  }
+}
 
-  /* .links {
-    margin-right: 100px;
-  } */
-  
-  .footer {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: #000000;
-    padding: 10px 0;
-  }
-  
-  
+.dropdown-button {
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-link {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  margin-top: var(--responsive-space);
+  margin-bottom: var(--responsive-space);
+}
+
+.footer {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #000000;
+}

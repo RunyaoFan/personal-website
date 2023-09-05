@@ -1,14 +1,29 @@
 .about-section {
-    margin-bottom: 5vh;
+  margin-bottom: 5vh;
 }
+
+h1 {
+  font-size: 1.8rem;
+}
+
+a {
+  color: black;
+}
+
+.about-text-container p {
+    color: #727272;
+    font-size: 1.35rem;
+    line-height: 1.5;
+  }
 
 @media screen and (max-width: 512px) {
-    .about-section h1{
-        font-size: 1.3rem;
-    }
+  .about-section h1 {
+    font-size: 1.3rem;
+  }
 
-    .about-section p{
-        font-size: 1rem;
-    }
-    
+  .about-section p {
+    font-size: 1rem;
+  }
 }
+
+

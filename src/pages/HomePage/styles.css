@@ -15,31 +15,21 @@
     width: 80%;
     font-family: 'Inter', sans-serif;
     color: #727272;
+    margin: 1vh 0 3vh;
+}
+
+@media screen and (max-width: 1600px) {
+    .image-caption {
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width: 512px) {
     .image-caption {
-        font-size: 10px;
+        font-size: 0.625rem;
     }
 
     .image {
         width: 100%;
     }
 }
-
-.home-text-container p {
-    font-size: 1.35rem;
-    line-height: 1.5;
-}
-
-h1 {
-    font-size: 1.8rem;
-}
-
-a {
-    color: black;
-}
-
-/* .home-text-container p {
-    font-size: clamp(12px, 1.4vw, 32px);
-} */

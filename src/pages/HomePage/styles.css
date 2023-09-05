@@ -10,11 +10,21 @@
     width: 80%;
 }
 
-.text-container {
+.image-caption {
     text-align: center;
     width: 80%;
     font-family: 'Inter', sans-serif;
     color: #727272;
+}
+
+@media screen and (max-width: 512px) {
+    .image-caption {
+        font-size: 10px;
+    }
+
+    .image {
+        width: 100%;
+    }
 }
 
 .home-text-container p {

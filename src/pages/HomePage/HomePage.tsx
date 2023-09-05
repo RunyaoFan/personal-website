@@ -7,9 +7,8 @@ const HomePage: React.FC = () => {
     <div>
         <div className="home-image-container">
             <img className="image" src="https://runyaosphotos.s3.amazonaws.com/000084150001.jpg" alt="Zhengzhou" />
-            <div className="text-container">
+            <div className="image-caption">
                 <p>Zhengzhou, China, 13 May 2020</p>
-                {/* <div className="copyright">@Runyao Fan</div> */}
             </div>
         </div>
         

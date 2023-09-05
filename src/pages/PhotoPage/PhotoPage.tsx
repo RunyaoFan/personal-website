@@ -42,7 +42,7 @@ const PhotoPage: React.FC = () => {
         <button onClick={handleNext}>{">"}</button>
     </div>
 
-    <p className="caption-responsive">{IMAGES[currentImageIndex].caption}</p>
+    <p className="image-caption">{IMAGES[currentImageIndex].caption}</p>
 
     <div className="previews">
         {IMAGES.map((img, index) => (

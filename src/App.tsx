@@ -68,7 +68,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </span>
         <Navbar location={location} />
       </div>
-      <div>
+      <div className="content">
         {children}
       </div>
       <footer className="footer">

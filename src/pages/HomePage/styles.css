@@ -18,10 +18,18 @@
 }
 
 .home-text-container p {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     line-height: 1.5;
+}
+
+h1 {
+    font-size: 1.8rem;
 }
 
 a {
     color: black;
 }
+
+/* .home-text-container p {
+    font-size: clamp(12px, 1.4vw, 32px);
+} */

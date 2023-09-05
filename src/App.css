@@ -1,10 +1,10 @@
 .container {
     width: 60%;
-    margin: 3rem auto 5rem;
+    margin: 3rem auto 3rem;
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
-    height: 100vh; 
+    min-height: 100vh; 
   }
   
   /* @media screen and (orientation: portrait) {
@@ -13,10 +13,24 @@
     }
   } */
 
+  :root {
+    --responsive-space: 3vh;  /* Default responsive spacing */
+  }
+  
+  /* .header {
+    margin-bottom: var(--responsive-space);
+  } */
+  
+  .content {
+    margin-top: var(--responsive-space);
+    margin-bottom: var(--responsive-space);
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: var(--responsive-space);
 }
 
 .header .name, .header .link-container {
@@ -102,7 +116,7 @@
     font-size: 0.75rem;
     font-weight: 400;
     color: #000000;
+    padding: 10px 0;
   }
-  
   
   

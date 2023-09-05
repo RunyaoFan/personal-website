@@ -1,0 +1,53 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center the main content and previews horizontally */
+    justify-content: center; /* center everything vertically */
+    margin: 5rem 0;
+}
+
+.main-content {
+    display: flex;
+    align-items: center; /* this will vertically align the buttons with the main image */
+    width: 100%;
+}
+
+.previews {
+    display: flex;
+    justify-content: center; /* this will horizontally center the preview images */
+    flex-wrap: wrap; /* this will ensure the previews wrap to the next line if there are many */
+    
+}
+
+.carousel .main-content button {
+    background: none;      /* remove default background */
+    border: none;          /* remove borders */
+    font-size: 2rem;       /* increase font size */
+    cursor: pointer;       /* indicate clickable */
+    outline: none;         /* remove focus outline - add custom focus styles if needed for accessibility */
+    padding: 0;            /* remove padding */
+}
+
+.main-content img {
+    /* width: 80%; */
+    margin: auto;
+    border: 0.4rem solid black;
+    /* max-width: 50vw;
+    width: auto; To maintain the image's aspect ratio */
+    height: 60vh;
+}
+
+/* Styles for wider viewports */
+@media screen and (max-width: 1280px) {
+    .main-content img {
+        height: auto;   /* Set height to 60% of the viewport height */
+        width: 50vw;    /* Auto adjust width based on aspect ratio */
+    }
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    color: #727272;
+    margin: 1rem 0 2rem;
+}
+

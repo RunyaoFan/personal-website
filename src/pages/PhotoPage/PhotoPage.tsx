@@ -14,6 +14,18 @@ const IMAGES = [
   { src: "https://runyaosphotos.s3.amazonaws.com/20221227_1.png", caption: "Havana, Cuba, 27 Dec 2022" },
 ];
 
+const PREVIEWS = [
+  { src: "https://runyaosphotos.s3.amazonaws.com/20200427_1-min.png", caption: "Zhengzhou, China, 3 May 2020" },
+  { src: "https://runyaosphotos.s3.amazonaws.com/20200512_1-min.png", caption: "Zhengzhou, China, 12 May 2020" },
+  { src: "https://runyaosphotos.s3.amazonaws.com/20200513_1-min.jpg", caption: "Zhengzhou, China, 13 May 2020" },
+  { src: "https://runyaosphotos.s3.amazonaws.com/20210926_1-min.png", caption: "New York, United States, 26 Sep 2021" },
+  { src: "https://runyaosphotos.s3.amazonaws.com/20220315_1-min.png", caption: "Casablanca, Morocco, 15 Mar 2022" },
+  { src: "https://runyaosphotos.s3.amazonaws.com/20220317_1-min.png", caption: "Tangier, Morocco, 17 Mar 2022" },
+  { src: "https://runyaosphotos.s3.amazonaws.com/20220320_1-min.png", caption: "Marrakesh, Morocco, 20 Mar 2022" },
+  { src: "https://runyaosphotos.s3.amazonaws.com/20221216_1-min.png", caption: "Champaign, United States, 16 Dec 2022" },
+  { src: "https://runyaosphotos.s3.amazonaws.com/20221227_1-min.png", caption: "Havana, Cuba, 27 Dec 2022" },
+];
+
 const PhotoPage: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -45,7 +57,7 @@ const PhotoPage: React.FC = () => {
     <p className="image-caption">{IMAGES[currentImageIndex].caption}</p>
 
     <div className="previews">
-        {IMAGES.map((img, index) => (
+        {PREVIEWS.map((img, index) => (
             <img
                 key={index}
                 src={img.src}
